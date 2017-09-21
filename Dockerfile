@@ -9,6 +9,10 @@ ENV NETDISCO_HOME "/netdisco"
 ENV NETDISCO_VERSION 2.036009
 ENV NETDISCO_MIBS_VERSION 3.4
 
+# Change timezone
+RUN rm /etc/localtime
+RUN ln -s /usr/share/zoneinfo/Europe/Madrid /etc/localtime 
+
 # install and update packages
 RUN yum -y install epel-release \
         && yum -y install \
