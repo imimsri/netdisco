@@ -1,12 +1,12 @@
 FROM centos:7
-MAINTAINER Ira W. Snyder <isnyder@lcogt.net>
+MAINTAINER IMIM-SRI <sri@imim.cat>
 
 # netdisco-web runs on port 5000
 EXPOSE 5000
 ENTRYPOINT [ "/init" ]
 
 ENV NETDISCO_HOME "/netdisco"
-ENV NETDISCO_VERSION 2.036012_003
+ENV NETDISCO_VERSION 2.038009
 ENV NETDISCO_MIBS_VERSION 4.003
 
 # Change timezone
