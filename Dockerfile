@@ -55,3 +55,4 @@ RUN cd "$NETDISCO_HOME" \
 
 # Install operating system configuration
 COPY docker/ /
+
