@@ -12,6 +12,7 @@ ENV NETDISCO_MIBS_VERSION 4.003
 # Change timezone
 RUN rm /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Europe/Madrid /etc/localtime 
+RUN ln -s /usr/share/zoneinfo/Europe/Madrid /etc/timezone 
 
 # install and update packages
 RUN yum -y install epel-release \
